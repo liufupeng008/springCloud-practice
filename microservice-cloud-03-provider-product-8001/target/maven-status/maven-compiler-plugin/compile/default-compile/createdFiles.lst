@@ -1,0 +1,5 @@
+com/fupeng/springcloud/mapper/ProductMapper.class
+com/fupeng/springcloud/service/ProductService.class
+com/fupeng/springcloud/controller/ProductController.class
+com/fupeng/springcloud/ProductProvider_8001.class
+com/fupeng/springcloud/service/impl/ProductServiceImpl.class
