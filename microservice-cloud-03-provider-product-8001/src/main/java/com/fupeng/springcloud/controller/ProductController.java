@@ -16,7 +16,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
     @RequestMapping(value = "/product/add", method = RequestMethod.POST)
-    public boolean add(Product product) {
+    public boolean add(@RequestBody Product product) {
         return productService.add(product);
     }
     @RequestMapping(value = "/product/get/{id}", method = RequestMethod.GET)

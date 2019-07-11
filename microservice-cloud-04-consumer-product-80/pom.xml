@@ -13,6 +13,7 @@
     <groupId>com.fupeng.springcloud</groupId>
     <artifactId>microservice-cloud-04-consumer-product-80</artifactId>
     <dependencies>
+
     <dependency>
         <groupId>com.fupeng.springcloud</groupId>
         <artifactId>microservice-cloud-02-api</artifactId>
@@ -22,7 +23,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+
+        <!-- 导入Eureka-server 服务端依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
     </dependencies>
+
+
 
 
 

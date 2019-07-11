@@ -15,14 +15,15 @@ import java.util.List;
 @RestController
 public class ProductController_Consumer {
 
-    private final static String REST_URL_REFIX = "http://localhost:8001";
+    //private final static String REST_URL_REFIX = "http://localhost:8001";
+    private final static String REST_URL_REFIX = "http://microservice-product";
 
     @Autowired
     private RestTemplate restTemplate;
 
     @RequestMapping(value = "/conssumer/product/add")
     public boolean add(Product product){
-      return restTemplate.postForObject(REST_URL_REFIX,product,boolean.class);
+      return restTemplate.postForObject(REST_URL_REFIX+"/product/add",product,Boolean.class);
     }
 
     @RequestMapping(value = "/conssumer/product/get/{id}")
